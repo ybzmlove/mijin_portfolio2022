@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEND MESSAGE</title>
+    <link rel="stylesheet" href="./css/googleMail.css">
+</head>
+<body>
+    <div class="contact">
+        <!-- <h2>CONTACT ME</h2> -->
+        <form method="post" action="https://script.google.com/macros/s/AKfycbwedBbV40JoA_oaZEK3R7nEMYiNjzKgw8O6L3bbGQ/exec" class="gform form-elements" name="contactUs">
+            <fieldset>
+                <legend>SEND EMAIL</legend>
+                <div class="formlist">
+                    <ul>
+                        <li>
+                            <label for="name">이름 또는 회사명<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="text" id="name" name="name" placeholder="이름 또는 회사명을 입력해주세요." required autocomplete="off">
+                            </span>
+                        </li>
+
+                        <li>
+                            <label for="email">답변 받을 이메일<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="email" id="email" name="email" placeholder="sample@mail.com" required autocomplete="off">
+                            </span>
+                        </li>
+
+                        <li>
+                            <label for="message">문의내용<sup>*</sup></label>
+                            <span class="inputbox">
+                                <textarea id="message" name="message" placeholder="문의사항을 입력해주세요." required autocomplete="off"></textarea>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn_box">
+                        <button type="submit" class="command_btn">SEND</button>
+                    </div>
+                </div>
+
+                <div class="thankyou_message">
+                    <article>
+                        <h1>작성된 내용이 모두 전송되었습니다.</h1>
+                        <p>메일 확인 후 연락드리겠습니다.</p>
+                        <div class="btn_box">
+                            <a href=""  class="close">닫기</a>
+                        </div>
+                    </article>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <span class="comment">작성하신 내용은 메일로 전송됩니다.</span>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/form-submission-handler.js"></script>
+    <script src="./js/googleMail.js"></script>
+
+
+
+</body>
+</html>

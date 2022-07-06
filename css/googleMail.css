@@ -1,0 +1,157 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+:root{
+    --main-color: rgb(185, 223, 215);
+    --sub-color: rgb(225, 236, 234);
+}
+
+body{ background-color: var(--sub-color);}
+.contact{
+    max-width: 800px;
+    min-width: 340px;
+    width: 100%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+/* .contact h2{ 
+    font-size: 24px; color: #555;
+    padding-bottom: 20px;
+} */
+.contact fieldset{ 
+    border: 1px solid #999;
+    border-radius: 4px;
+    /* background-color: #afa; */
+    padding: 15px 50px 10px;
+}
+.contact fieldset legend{ 
+    padding: 0 15px;
+    font-size: 20px; color: #777;
+    font-weight: bold;
+}
+.contact fieldset .formlist{ padding: 10px;}
+.contact fieldset .formlist ul{ padding-bottom: 10px;}
+.contact fieldset .formlist ul li{ 
+    display: flex;
+    padding: 10px 0;
+}
+.contact fieldset .formlist ul li label{ 
+    display: block;
+    width: 140px; 
+    font-size: 16px; font-weight: bold;
+    line-height: 40px; color: #999;
+    word-break: keep-all;
+}
+.contact fieldset .formlist ul li label sup{ color: red;}
+.contact fieldset .formlist ul li .inputbox{
+    width: calc(100% - 140px);
+}
+.contact fieldset .formlist ul li .inputbox input{
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 40px; font-size: 16px;
+    color: #555;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline-color: var(--main-color);
+}
+.contact fieldset .formlist ul li .inputbox textarea{ 
+    display: block;
+    width: 100%; height: 320px;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px; color: #555;
+    line-height: 1.2;
+    background-color: #eee;
+    outline-color: var(--main-color);
+}
+.contact fieldset .formlist .btn_box{ 
+    padding: 20px 0 0;
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
+.contact fieldset .formlist .btn_box button{ 
+    padding: 10px 20px;
+    font-size: 17px; color: #999;
+    font-weight: bold;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.contact fieldset .formlist .btn_box button:hover{
+    background-color: #999;
+    color: #eee;
+}
+
+
+.thankyou_message{ 
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.thankyou_message article{ 
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 500px; min-width: 300px;
+    background-color: #eee;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.thankyou_message article h1{
+    padding-bottom: 20px; 
+    font-size: 22px; color: #777;
+    word-break: keep-all;
+}
+.thankyou_message article p{ 
+    padding-bottom: 20px;
+    font-size: 17px; color: #999;
+    border-bottom: 1px solid #ccc;
+}
+.thankyou_message article .btn_box{ 
+    padding-top: 20px; 
+    text-align: center;
+}
+.thankyou_message article .btn_box .close{ 
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #eee;
+    color: #999; font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #999;    
+    border-radius: 4px;
+}
+.thankyou_message article .btn_box .close:hover{
+    background-color: #999;
+    color: #eee;
+}
+
+.comment{
+    display: block;
+    padding-top: 10px;
+    font-size: 14px; color: #f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
