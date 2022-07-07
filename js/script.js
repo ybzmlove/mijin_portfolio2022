@@ -449,18 +449,18 @@ circling.innerHTML = articleBox;
 
 
 //사용자에 의한 회전 일시정지
-// const articles = circling.querySelectorAll("article");
-// for(v of articles){
-//     console.log(v);
+const articles = circling.querySelectorAll("article");
+for(v of articles){
+    console.log(v);
 
-//     v.addEventListener("mouseenter", () => {
-//         circling.style.animationPlayState = "paused";
-//     });
+    v.addEventListener("mouseenter", () => {
+        circling.style.animationPlayState = "paused";
+    });
 
-//     v.addEventListener("mouseleave", () => {
-//         circling.style.animationPlayState = "running";
-//     });
-// }
+    v.addEventListener("mouseleave", () => {
+        circling.style.animationPlayState = "running";
+    });
+}
 
 
 
