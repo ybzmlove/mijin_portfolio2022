@@ -395,11 +395,11 @@ const portArr = [
     ["Publishing", "kuliner.png", "KULINER", ["html5.png", "css-3.png"], "Kuliner Restaurant Website Production", "https://ybzmlove.github.io/kuliner", "Goggle Map 연동", "wow js 사용"],
     ["Publishing", "filmmaker.png", "FILMMAKER", ["html5.png", "css-3.png", "js.png", "vue.png"], "Filmmaker Website Renewal", "https://ybzmlove.github.io/filmmaker", "Vue사용 - 단일페이지 구성", ""],
     ["Publishing", "Movie-Battle-of-Jangsari.png", "BATTLE OF JANGSARI", ["html5.png", "css-3.png", "js.png", "vue.png"], "Movie Battle of Jangsari Website Production", "https://ybzmlove.github.io/Movie_Battle-of-Jangsari", "ajax 사용 - Sub Menu이동시 불필요한 로딩 제거", ""],
-    ["Develop", "weatherApp.png", "WEATHER APP", ["html5.png", "css-3.png", "js.png"], "Weather App Production", "https://ybzmlove.github.io/weatherApp", "ajax 사용- Open Weather Map의 날씨정보 API 연동", "위치 정보를 위도, 경도로 확인하여 날씨 조회"],
+    ["Develop", "weatherApp.png", "WEATHER APP", ["html5.png", "css-3.png", "js.png"], "Weather App Production", "https://ybzmlove.github.io/weather", "ajax 사용- Open Weather Map의 날씨정보 API 연동", "위치 정보를 위도, 경도로 확인하여 날씨 조회"],
     ["Publishing", "musicBox.png", "MUSIC BOX", ["html5.png", "css-3.png", "js.png"], "Music Box Website Production", "https://ybzmlove.github.io/musicBox", "Responsive Web Publishing", ""],
     ["Publishing", "origin.png", "ORIGIN", ["html5.png", "css-3.png"], "Origin Website Production", "https://ybzmlove.github.io/origin", "Responsive Web Publishing", "Grid 사용 - 콘텐츠 구성"],
-    ["Publishing", "adAge.png", "adAge", ["html5.png", "css-3.png", "js.png"], "adAge Website Renewal", "https://ybzmlove.github.io/adAge", "Responsive Web Publishing", "Hash 사용 - Sub page&Detail page 재활용"],
-    ["SPA", "nationalGeographic.png", "NATIONAL GEOGRAPHIC", ["html5.png", "css-3.png", "js.png", "vue.png"], "National Geographic Website Renewal", "https://ybzmlove.github.io/national_geographic", "Responsive Web Publishing", "router 사용 - Main page 와 5개의 Sub page로 구성"],
+    ["Publishing", "adAge.png", "adAge", ["html5.png", "css-3.png", "js.png"], "adAge Website Renewal", "https://ybzmlove.github.io/Ad_Age", "Responsive Web Publishing", "Hash 사용 - Sub page&Detail page 재활용"],
+    ["SPA", "nationalGeographic.png", "NATIONAL GEOGRAPHIC", ["html5.png", "css-3.png", "js.png", "vue.png"], "National Geographic Website Renewal", "https://ybzmlove.github.io/National-Geographic2022", "Responsive Web Publishing", "router 사용 - Main page 와 5개의 Sub page로 구성"],
     ["Develop", "mijin_portfolio.png", "MIJIN'S PORTFOLIO", ["html5.png", "css-3.png", "js.png", "vue.png"], "MIJIN'S PORTFOLIO Website Production", "https://ybzmlove.github.io/mijin_portfolio2022", "Fullpage vertical 방식 사용", "Gmail 연동 - 메일보내기"]
 ];
 
