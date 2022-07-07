@@ -7,8 +7,10 @@
     <title>Mijin's Portfolio</title>
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/09743b710b.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_res.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <ul>
             <li class="active"><a href="#">MAIN</a></li>
             <li><a href="#">ABOUT</a></li>
-            <!-- <li><a href="#">SKILLS</a></li> -->
+            <li><a href="#">PORTFOLIO</a></li>
             <li><a href="#">WORK</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
@@ -79,20 +81,24 @@
                     <span><b>새로운 도전을 즐기는&nbsp;&nbsp;</b> 신입 개발자입니다</span>
                 </div>            
                 <div class="introduction">
-                    <p>NAME 
+                    <div class="name">
+                        <p>NAME</p>
                         <span>송미진</span>
-                        
-                    </p>
-                    <p>AGE <span>35 (1988.08.15)</span></p>
-                    <p>ADDRESS 
+                    </div>
+                    <div class="age">
+                        <p>AGE</p>
+                        <span>35 (1988.08.15)</span>
+                    </div>
+                    <div class="address">
+                        <p>ADDRESS </p>
                         <span>서울시 서초구</span>
-                        
-                    </p>
-                    <p>EDUCATION 
-                        <span>단국대학교 응용수학과 / 중국어과 졸업 </span>
+                    </div>
+                    <div class="education">
+                        <p>EDUCATION </p>
+                        <span>단국대학교 응용수학과 / 중국어과 졸업</span>
                         <span>강남 하이미디어 웹디자인&웹퍼블리셔 수료</span>
-                    </p>
-                </div>  
+                    </div>
+                </div> 
                 
                 <div class="circle_bar">
                     <div class="frame">
@@ -181,10 +187,134 @@
         </section>
 
         
-        <!-- skills -->
-        <!-- <section class="box box_3">
+        <!-- portfolio -->
+        <section class="box box_3">
+            <div class="wrap">
+                <video class="bg_video" src="./video/blur3.mp4" autoplay loop playsinline muted></video>
+            <section id="circling">
+                <article class="surface1" style="--i:1">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space">
+                            <div class="web_img"></div>
+                            <div class="web_info">
+                                <div class="top">
+                                    <h3>세종병원 웹사이트</h3>
+                                    <ul>
+                                        <li><img src="./img/html5.png" alt=""></li>
+                                        <li><img src="./img/css-3.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <p>세종병원 리뉴얼 홈페이지 제작</p>
+                                    <p>UI 관점에서 효율성을 극대화한 웹사이트 제작</p>
+                                    <div class="detail_btn">
+                                        <a href="">Detail More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="surface2" style="--i:2">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space">
+                            <div class="web_img"></div>
+                            <div class="web_info">
+                                <div class="top">
+                                    <h3>B&O Play - website</h3>
+                                    <ul>
+                                        <li><img src="./img/html5.png" alt=""></li>
+                                        <li><img src="./img/css-3.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="bottom">
+                                    <p>B&O 제품 소개 페이지</p>
+                                    <p>UX 관점에서 접근하여 BI의 파급효과</p>
+                                    <div class="detail_btn">
+                                        <a href="">Detail More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="surface3" style="--i:3">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+                <article class="surface4" style="--i:4">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+                <article class="surface5" style="--i:5">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+                <article class="surface6" style="--i:6">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+                <article class="surface4" style="--i:4">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+                <article class="surface8" style="--i:8">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article>
+                <article class="surface4" style="--i:9">
+                    <h1>Publish</h1>
+                    <div class="inner">
+                        <div class="space"></div>
+                    </div>
+                </article> 
+            </section>
+
+            <div class="controlBtn">
+                <img src="./img/pause.svg" alt="">
+            </div>
+            </div>            
+        </section>       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
-        </section> -->
+        </section>
 
 
         <!-- work -->       

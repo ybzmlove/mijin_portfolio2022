@@ -334,8 +334,8 @@ Vue.component("work-el", {
                 {workImg: "musicBox.png", name: "MUSIC BOX", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Responsive Web Publishing", explain2: "", version: "PC version", address: "https://ybzmlove.github.io/musicBox"},
                 {workImg: "origin.png", name: "ORIGIN", skills: "HTML, CSS", publish: "Publishing 100%", explain1: "Responsive Web Publishing", explain2: "Grid 사용", version: "PC version", address: "https://ybzmlove.github.io/origin"},                
                 {workImg: "adAge.png", name: "AD AGE", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Responsive Web Publishing", explain2: "Hash사용-Sub page&Detail page 재활용", version: "PC version", address: "https://ybzmlove.github.io/Ad_Age"},
-                {workImg: "nationalGeographic.png", name: "National Geographic", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Responsive Web Publishing", explain2: "Vue js의 router 사용-Main page 와 5개의 Sub page로 구성 ", version: "PC version", address: "https://ybzmlove.github.io/National-Geographic2022"},           
-                {workImg: "mijin_portfolio.png", name: "MIJIN'S PORTFOLIO", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Fullpage vertical 방식 사용", explain2: "Gmail연동-메일보내기", version: "PC version", address: "https://ybzmlove.github.io/mijin_portfolio"},
+                {workImg: "nationalGeographic.png", name: "National Geographic", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Responsive Web Publishing", explain2: "Vue js의 router 사용-Main page 와 5개의 Sub page로 구성", version: "PC version", address: "https://ybzmlove.github.io/National-Geographic2022"},           
+                {workImg: "mijin_portfolio.png", name: "MIJIN'S PORTFOLIO", skills: "HTML, CSS, jQuery, Javascript", publish: "Publishing 100%", explain1: "Fullpage vertical 방식 사용", explain2: "Gmail연동-메일보내기", version: "PC version", address: "https://ybzmlove.github.io/mijin_portfolio2022"},
             ],
         }
     }, 
@@ -374,3 +374,113 @@ Vue.component("work-el", {
 new Vue({
     el : ".box_4"
 });
+
+
+
+
+
+
+
+//구조를 구성하는 부분
+//2차 배열의 패턴 (기준은 article)
+//["구분(Design, Publishing, Develop, App)", 이미지", "타이틀", ["소스마크1", "소스마크", "소스마크3", ...], "내용", "사이트링크주소"]
+
+const portArr = [
+    ["Publishing", "b&o.png", "B&O", ["html5.png", "css-3.png"], "B&O Website Renewal", "https://ybzmlove.github.io/b-o-play", "", ""],
+    ["Publishing", "sejong_hospital.png", "SEJONG HOSPOTAL", ["html5.png", "css-3.png"], "Sejong Hospital Website Renewal", "https://ybzmlove.github.io/sejong_hospital", "", ""],
+    ["Publishing", "wedding.png", "THE AISLE WEDDING", ["html5.png", "css-3.png"], "Wedding Website Renewal", "https://ybzmlove.github.io/wedding", "", ""],
+    ["Publishing", "cakecious.png", "CAKECIOUS", ["html5.png", "css-3.png"], "Cakecious Website Renewal", "https://ybzmlove.github.io/cakecious", "Goggle Map 연동", ""],
+    ["Publishing", "cashmere.png", "CASHMERE", ["html5.png", "css-3.png"], "Cashmere Website Renewal", "https://ybzmlove.github.io/cashmere2022", "Goggle Map 연동", ""],
+    ["Publishing", "investplan.png", "INVESTPLAN", ["html5.png", "css-3.png"], "Investplan Website Renewal", "https://ybzmlove.github.io/investplan", "Main page 와 5개의 Sub page로 구성", ""],
+    ["Publishing", "kuliner.png", "KULINER", ["html5.png", "css-3.png"], "Kuliner Restaurant Website Production", "https://ybzmlove.github.io/kuliner", "Goggle Map 연동", "wow js 사용"],
+    ["Publishing", "filmmaker.png", "FILMMAKER", ["html5.png", "css-3.png", "js.png", "vue.png"], "Filmmaker Website Renewal", "https://ybzmlove.github.io/filmmaker", "Vue사용 - 단일페이지 구성", ""],
+    ["Publishing", "Movie-Battle-of-Jangsari.png", "BATTLE OF JANGSARI", ["html5.png", "css-3.png", "js.png", "vue.png"], "Movie Battle of Jangsari Website Production", "https://ybzmlove.github.io/Movie_Battle-of-Jangsari", "ajax 사용 - Sub Menu이동시 불필요한 로딩 제거", ""],
+    ["Develop", "weatherApp.png", "WEATHER APP", ["html5.png", "css-3.png", "js.png"], "Weather App Production", "https://ybzmlove.github.io/weatherApp", "ajax 사용- Open Weather Map의 날씨정보 API 연동", "위치 정보를 위도, 경도로 확인하여 날씨 조회"],
+    ["Publishing", "musicBox.png", "MUSIC BOX", ["html5.png", "css-3.png", "js.png"], "Music Box Website Production", "https://ybzmlove.github.io/musicBox", "Responsive Web Publishing", ""],
+    ["Publishing", "origin.png", "ORIGIN", ["html5.png", "css-3.png"], "Origin Website Production", "https://ybzmlove.github.io/origin", "Responsive Web Publishing", "Grid 사용 - 콘텐츠 구성"],
+    ["Publishing", "adAge.png", "adAge", ["html5.png", "css-3.png", "js.png"], "adAge Website Renewal", "https://ybzmlove.github.io/adAge", "Responsive Web Publishing", "Hash 사용 - Sub page&Detail page 재활용"],
+    ["SPA", "nationalGeographic.png", "NATIONAL GEOGRAPHIC", ["html5.png", "css-3.png", "js.png", "vue.png"], "National Geographic Website Renewal", "https://ybzmlove.github.io/national_geographic", "Responsive Web Publishing", "router 사용 - Main page 와 5개의 Sub page로 구성"],
+    ["Develop", "mijin_portfolio.png", "MIJIN'S PORTFOLIO", ["html5.png", "css-3.png", "js.png", "vue.png"], "MIJIN'S PORTFOLIO Website Production", "https://ybzmlove.github.io/mijin_portfolio2022", "Fullpage vertical 방식 사용", "Gmail 연동 - 메일보내기"]
+];
+
+
+
+let circling = document.querySelector("#circling");
+let articleBox = ``;
+let iconList = ``; 
+
+portArr.forEach((v, i, a) => {
+    iconList = ``; //forEach문에서 초기화
+    for (m of v[3]){
+        iconList += `<li><img src="./img/${m}" alt=""></li>`;
+    }
+    console.log(`${i}번째 ${iconList}`);
+
+    articleBox += `
+    <article class="surface1" style="--i:${i+1}">
+        <h1>${v[0]}</h1>
+        <div class="inner">
+            <div class="space">
+                <div class="web_img" style="background-image: url(./img/${v[1]})"></div>
+                <div class="web_info">
+                    <div class="top">
+                        <h3>${v[2]}</h3>
+                        <ul>
+                            ${iconList}
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <p>${v[4]}</p>
+                        <p>${v[6]}</p>
+                        <p>${v[7]}</p>
+                        <div class="detail_btn">
+                            <a href="${v[5]}" target="_blank">Detail More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    `;
+});
+
+circling.innerHTML = articleBox;
+
+
+
+//사용자에 의한 회전 일시정지
+// const articles = circling.querySelectorAll("article");
+// for(v of articles){
+//     console.log(v);
+
+//     v.addEventListener("mouseenter", () => {
+//         circling.style.animationPlayState = "paused";
+//     });
+
+//     v.addEventListener("mouseleave", () => {
+//         circling.style.animationPlayState = "running";
+//     });
+// }
+
+
+
+//사용자 버튼 클릭에 의한 일시정지
+const ctrlBtn = document.querySelector(".controlBtn");
+ctrlBtn.addEventListener("click", () => {
+    const $play = ctrlBtn.classList.contains("play");
+    if (!$play){
+        ctrlBtn.classList.add("play");
+        circling.style.animationPlayState = "paused";
+        ctrlBtn.querySelector("img").setAttribute("src", "./img/play.svg");
+    }else{
+        ctrlBtn.classList.remove("play");
+        circling.style.animationPlayState = "running";
+        ctrlBtn.querySelector("img").setAttribute("src", "./img/pause.svg");
+    }
+});
+
+
+
+
+
+
